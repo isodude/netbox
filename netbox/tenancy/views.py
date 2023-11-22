@@ -4,11 +4,12 @@ from django.utils.translation import gettext as _
 
 from circuits.models import Circuit
 from dcim.models import Cable, Device, Location, PowerFeed, Rack, RackReservation, Site, VirtualDeviceContext
-from ipam.models import Aggregate, ASN, IPAddress, IPRange, L2VPN, Prefix, VLAN, VRF
+from ipam.models import Aggregate, ASN, IPAddress, IPRange, Prefix, VLAN, VRF
 from netbox.views import generic
 from utilities.utils import count_related
 from utilities.views import register_model_view, ViewTab
 from virtualization.models import VirtualMachine, Cluster
+from vpn.models import L2VPN
 from wireless.models import WirelessLAN, WirelessLink
 from . import filtersets, forms, tables
 from .models import *
