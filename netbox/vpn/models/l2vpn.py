@@ -6,10 +6,10 @@ from django.urls import reverse
 from django.utils.functional import cached_property
 from django.utils.translation import gettext_lazy as _
 
-from ipam.choices import L2VPNTypeChoices
-from ipam.constants import L2VPN_ASSIGNMENT_MODELS
+from vpn.constants import L2VPN_ASSIGNMENT_MODELS
 from netbox.models import NetBoxModel, PrimaryModel
 from netbox.models.features import ContactsMixin
+from vpn.choices import L2VPNTypeChoices
 
 __all__ = (
     'L2VPN',
